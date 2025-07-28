@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AURA - Luxury Redefined</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300;400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script> </head>
+<body>
+
+    <div class="login-overlay" id="login-overlay">
+        <div class="login-modal">
+            <span class="close-btn" id="close-login">&times;</span>
+            <h2>Welcome Back</h2>
+            <form>
+                <input type="email" placeholder="Email Address" required>
+                <input type="password" placeholder="Password" required>
+                <button type="submit" class="btn">Login</button>
+                <p>Don't have an account? <a href="#">Sign Up</a></p>
+            </form>
+        </div>
+    </div>
+
+    <div class="cart-overlay" id="cart-overlay">
+        <div class="cart-modal">
+            <span class="close-btn" id="close-cart">&times;</span>
+            <h2>Your Shopping Bag</h2>
+            <div id="cart-items">
+                <p>Your cart is currently empty.</p>
+            </div>
+            <div class="cart-total">
+                <p>Total: <span id="cart-total-price">₹0.00</span></p>
+            </div>
+            <button class="btn">Proceed to Checkout</button>
+        </div>
+    </div>
+
+
+    <header class="main-header">
+        <nav>
+            <div class="logo">WANNA
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#shoes">Shoes</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="nav-icons">
+                <a href="#" id="login-btn">Login</a>
+                <a href="#" id="cart-btn">Cart (<span id="cart-count">0</span>)</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero">
+            <div class="hero-content">
+                <h1>Walk in Style</h1>
+                <p> Footwear with the best form of comfort. Because your feet need special care. We help you in walking miles without stopping.
+                </p>
+                <a href="#shoes" class="btn">Explore Collection</a>
+            </div>
+        </section>
+
+        <section id="shoes" class="product-section">
+            <h2>Nike</h2>
+            <div class="product-grid">
+                <div class="product-card" data-name="Nike Structure 26 Men's Road Running Shoes" data-price="11 895.00">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/18aaef35-370f-4cbc-8a51-856f2f0b89e0/NIKE+STRUCTURE+26.png" alt="shoes 1">
+                    <h3>Nike Structure 26 Men's Road Running Shoes</h3>
+                    <p>₹11,895.00</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Nike Air Max Dn8 Men's shoes" data-price="17,495.00">
+                    <img src="https://encrypted-tbn1.gstatic.com/shopping?q=tbn:ANd9GcRyUT_5S3J7d608Nj8n0rCpsBj-gOJ0p5vEILYfiOiofzvOIVahAL7-RE985wXqYGLDYStHhEFj4SBDjy6EoYOdcLu580nzzQVkWO9mKermHDAT1CKCm_8j" alt="shoes 2">
+                    <h3>Nike Air Max Dn8 Men's shoes</h3>
+                    <p>₹17,495.00</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Nike Pegasus Trail 5 GORE-TEX Men's Waterproof Trail-Running Shoes" data-price=" 15 995.00">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/daf0e3a9-bfaf-41c7-acd0-d28bbaf7316f/NIKE+PEGASUS+TRAIL+5+GTX.png" alt="shoes 3">
+                    <h3>Nike Pegasus Trail 5 GORE-TEX Men's Waterproof Trail-Running Shoes</h3>
+                    <p>₹15,995.00</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Nike Men's Pegasus Premium Road Running Shoes" data-price="19,295.00">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/1de225fe-ea09-4aff-9d1f-dcbf170c1672/NIKE+PEGASUS+PREMIUM.png" alt="shoes 4">
+                    <h3>Nike Men's Pegasus Premium Road Running Shoes</h3>
+                    <p>₹19,295.00</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Nike Dunk Low Retro Premium" data-price="10,795.00">
+                    <img src="https://static.nike.com/a/images/c_limit,w_592,f_auto/t_product_v1/5f5f1a9c-6522-46a6-af3d-0b8ac29fec4e/NIKE+DUNK+LOW+RETRO+PRM.png" alt="shoes 5">
+                    <h3>Nike Dunk Low Retro Premium</h3>
+                    <p>₹10,795.00</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Nike Air Max TL 2.5 Shoes" data-price="16,995.00">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/d3a7852a-77bd-41c3-b496-688b0dd50e71/AIR+MAX+TL+2.5.png" alt="shoes 6">
+                    <h3>Nike Air Max TL 2.5 Shoes</h3>
+                    <p>₹16,995.00</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Nike Zoom Vomero 5 shoes" data-price="15,995.00">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/9a66789e-d140-4207-b0b6-33667e66a31f/W+NIKE+ZOOM+VOMERO+5.png" alt="shoes 7">
+                    <h3>Nike Zoom Vomero 5 Shoes</h3>
+                    <p>₹15,995.00</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Nike Air Max 90 Essential+ shoes" data-price="12,795.00">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/c3abcd5b-2c80-4b33-8ac2-a5e8a69f9e67/AIR+MAX+90+ESS%2B.png" alt="shoes 8">
+                    <h3>Nike Air Max 90 Essential+ shoes</h3>
+                    <p>₹12,795.00</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Nike Air Max Plus Premium shoes" data-price="16,995.00">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/bbe4cb5f-94bd-4008-b03a-423286618b67/NIKE+AIR+MAX+PLUS+PRM.png" alt="shoes 9">
+                    <h3>Nike Air Max Plus Premium shoes</h3>
+                    <p>₹16,995.00</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Air Jordan 4 Retro 'Aluminium' shoes" data-price="19,495.00">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco,u_126ab356-44d8-4a06-89b4-fcdcc8df0245,c_scale,fl_relative,w_1.0,h_1.0,fl_layer_apply/b1818011-c410-4ae3-9045-5a71085e1506/WMNS+AIR+JORDAN+4+RETRO.png" alt="Luxury Watch 10">
+                    <h3>Air Jordan 4 Retro 'Aluminium' shoes</h3>
+                    <p>₹19,495.00</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Nike Vaporfly 4 Men's Road Racing Shoes" data-price="22,495.00">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/5870c2a4-db94-4590-abb5-00f2119e6692/ZOOMX+VAPORFLY+NEXT%25+4+PRM.png" alt="shoes 11">
+                    <h3>Nike Vaporfly 4 Men's Road Racing Shoes</h3>
+                    <p>₹22,495.00</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                <div class="product-card" data-name="Nike Air VaporMax 2023 Flyknit Men's Shoes" data-price=" 19,295.00">
+                    <img src="https://static.nike.com/a/images/t_PDP_1728_v1/f_auto,q_auto:eco/4c6d49b6-6bb2-4a52-9a6a-335fa6f114bc/AIR+VAPORMAX+2023+FK.png" alt="shoes 12">
+                    <h3>Nike Air VaporMax 2023 Flyknit Men's Shoes</h3>
+                    <p>₹ 19,295.00</p>
+                    <button class="btn add-to-cart">Add to Cart</button>
+                </div>
+                </div>
+        </section>
+
+        <section id="contact" class="contact-section">
+             <h2>Stay In Touch</h2>
+             <p>For inquiries or private viewings, please contact our concierge.</p>
+             <form class="contact-form">
+                <input type="text" name="name" placeholder="Your Name" required>
+                <input type="email" name="email" placeholder="Your Email" required>
+                <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+             </form>
+        </section>
+
+    </main>
+
+    <footer>
+        <p>&copy; 2025 WANNA The best shoes for all ages. | Let your feet speak.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
